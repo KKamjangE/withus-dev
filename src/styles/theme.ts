@@ -20,4 +20,7 @@ export const MUI_THEME = createTheme({
             },
         },
     },
+    typography: {
+        fontFamily: ['Noto Sans KR', 'sans-serif'].join(','),
+    },
 });
