@@ -1,6 +1,5 @@
-import { DARK_THEME, LIGHT_THEME } from '#/components/styles/theme';
-import { useThemeState } from '#/store/themeStore';
-import { ThemeProvider as Theme } from '@emotion/react';
+import { MUI_THEME } from '#/styles/theme';
+import { ThemeProvider as MuiThemeProvider } from '@mui/material';
 import { ReactNode } from 'react';
 
 interface ThemeProviderProps {
@@ -8,12 +7,7 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-    const theme = useThemeState();
-    return (
-        <Theme theme={theme === 'light' ? LIGHT_THEME : DARK_THEME}>
-            {children}
-        </Theme>
-    );
+    return <MuiThemeProvider theme={MUI_THEME}>{children}</MuiThemeProvider>;
 };
 
 export default ThemeProvider;
