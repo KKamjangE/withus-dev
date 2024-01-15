@@ -1,13 +1,24 @@
-export type postSignInAPIProps = {
-    data: {
-        userId: string;
-        password: string;
-    };
+import { AxiosResponse } from 'axios';
+
+type ResponseStatus = {
+    statusCode: number;
+    statusMsg: string;
 };
 
-export type postSignUpAPIProps = {
-    data: {
-        userId: string;
-        password: string;
-    };
+export type PostSignInAPIProps = {
+    userMail: string;
+    password: string;
 };
+
+export type PostSignInAPI = (
+    data: PostSignInAPIProps,
+) => Promise<AxiosResponse<ResponseStatus>>;
+
+export type PostSignUpAPIProps = {
+    userMail: string;
+    password: string;
+};
+
+export type PostSignUpAPI = (
+    data: PostSignUpAPIProps,
+) => Promise<AxiosResponse<ResponseStatus>>;
