@@ -12,7 +12,7 @@ const GoogleSignButton = () => {
             color="google"
         >
             <S.ButtonContents>
-                <img src={GoogleLogo} />
+                <S.Logo src={GoogleLogo} />
                 Google로 계속
             </S.ButtonContents>
         </Button>
