@@ -13,6 +13,8 @@ const globalstyles = css`
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: antialiased;
+
+        box-sizing: border-box;
     }
     ::-ms-reveal {
         display: none;
