@@ -2,8 +2,10 @@ import { Button, OutlinedInput } from '@mui/material';
 import * as S from './styles';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import GoogleSignButton from '#/components/common/button/GoogleSignButton';
+import { usePostSignIn } from '#/hooks/queries/sign';
 
 const Sign = () => {
+    const { mutate } = usePostSignIn();
     return (
         <S.SignContainer>
             <S.IconSize>
@@ -21,8 +23,14 @@ const Sign = () => {
                     fullWidth
                     size="small"
                     placeholder="name@work-email.com"
+                    type="text"
                 />
-                <OutlinedInput fullWidth size="small" placeholder="password" />
+                <OutlinedInput
+                    fullWidth
+                    size="small"
+                    placeholder="password"
+                    type="password"
+                />
                 <Button
                     fullWidth
                     variant="contained"
