@@ -1,11 +1,23 @@
-import { Button, OutlinedInput } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import * as S from './styles';
 import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 import GoogleSignButton from '#/components/common/button/GoogleSignButton';
 import { usePostSignIn } from '#/hooks/queries/sign';
+import { useFormik } from 'formik';
+import validationSchema from '#/contents/validationSchema';
 
 const Sign = () => {
     const { mutate } = usePostSignIn();
+    const formik = useFormik({
+        initialValues: {
+            userMail: '',
+            password: '',
+        },
+        validationSchema: validationSchema.signInSchema,
+        onSubmit: (form) => {
+            console.log(form);
+        },
+    });
     return (
         <S.SignContainer>
             <S.IconSize>
@@ -19,17 +31,33 @@ const Sign = () => {
                 </S.NormalText>
             </S.SignGuideContainer>
             <S.FormContainer onSubmit={(e) => e.preventDefault()}>
-                <OutlinedInput
+                <TextField
                     fullWidth
                     size="small"
                     placeholder="name@work-email.com"
                     type="text"
+                    name={'userMail'}
+                    value={formik.values.userMail}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    error={formik.touched.userMail && !!formik.errors.userMail}
+                    helperText={
+                        formik.touched.userMail && formik.errors.userMail
+                    }
                 />
-                <OutlinedInput
+                <TextField
                     fullWidth
                     size="small"
                     placeholder="password"
                     type="password"
+                    name={'password'}
+                    value={formik.values.password}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    error={formik.touched.password && !!formik.errors.password}
+                    helperText={
+                        formik.touched.password && formik.errors.password
+                    }
                 />
                 <Button
                     fullWidth

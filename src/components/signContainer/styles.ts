@@ -66,3 +66,9 @@ export const LinkText = styled.a`
     text-decoration: underline;
     cursor: pointer;
 `;
+
+export const HelperText = styled.p`
+    font-size: ${small};
+    color: red;
+    margin: 5px 0 0;
+`;
