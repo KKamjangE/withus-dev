@@ -6,6 +6,7 @@ const globalstyles = css`
     ${emotionReset}
     :root {
         line-height: 24px;
+        white-space: nowrap;
 
         font-family: 'Noto Sans KR', sans-serif;
         font-synthesis: none;
@@ -13,9 +14,7 @@ const globalstyles = css`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: antialiased;
 
-        a {
-            color: black;
-        }
+        box-sizing: border-box;
     }
     ::-ms-reveal {
         display: none;

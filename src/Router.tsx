@@ -6,7 +6,7 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path={PAGE_PATH.sign} element={<Sign />}></Route>
+                <Route path={PAGE_PATH.sign} element={<Sign />} />
             </Routes>
         </BrowserRouter>
     );
