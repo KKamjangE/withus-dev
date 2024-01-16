@@ -30,7 +30,7 @@ const Sign = () => {
                     로그인하는 것을 추천드려요.
                 </S.NormalText>
             </S.SignGuideContainer>
-            <S.FormContainer onSubmit={(e) => e.preventDefault()}>
+            <S.FormContainer onSubmit={formik.handleSubmit}>
                 <TextField
                     fullWidth
                     size="small"
