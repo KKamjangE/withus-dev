@@ -52,6 +52,13 @@ export const MUI_THEME = createTheme({
                 },
             },
         },
+        MuiFormHelperText: {
+            styleOverrides: {
+                root: {
+                    margin: '5px 0 0',
+                },
+            },
+        },
     },
     typography: {
         fontFamily: ['Noto Sans KR', 'sans-serif'].join(','),
