@@ -1,15 +1,16 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { PAGE_PATH } from './contents/pages';
 import AuthPage from '#/page/Auth';
 
+const router = createBrowserRouter([
+    {
+        path: PAGE_PATH.auth,
+        element: <AuthPage />,
+    },
+]);
+
 const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path={PAGE_PATH.sign} element={<AuthPage />} />
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 };
 
 export default Router;
