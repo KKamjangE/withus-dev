@@ -1,5 +1,5 @@
 import { BASE_URL } from '#/contents/api';
-import { CommonAPI } from '#/types/api';
+import { CommonAPI } from '#/api/type';
 import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
 export const axiosInstance = axios.create({
