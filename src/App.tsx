@@ -1,5 +1,5 @@
 import Router from './Router';
-import QueryProvider from '#/components/providers/QueryProvider.tsx';
+import QueryProvider from '#/providers/QueryProvider';
 
 const App = () => {
     return (
