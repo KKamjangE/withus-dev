@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CloudIcon } from '@heroicons/react/24/outline';
+import { CloudIcon, EnvelopeIcon, KeyIcon } from '@heroicons/react/24/outline';
 
 import { PAGE_PATH } from '#/contents/page';
 import { usePostSignIn } from '#/hooks/queries/sign';
@@ -18,19 +18,25 @@ const AuthPage = () => {
                 로 로그인하는 것을 추천드려요.
             </h2>
             <form className="flex flex-col items-center gap-3 w-full max-w-sm">
-                <input
-                    placeholder="name@work-email.com"
-                    type="text"
-                    className="input input-secondary"
-                    autoFocus
-                    required
-                />
-                <input
-                    placeholder="password"
-                    type="password"
-                    className="input input-secondary"
-                    required
-                />
+                <label className="input input-secondary flex items-center gap-2">
+                    <EnvelopeIcon width={18} />
+                    <input
+                        placeholder="name@work-email.com"
+                        type="text"
+                        className="grow"
+                        autoFocus
+                        required
+                    />
+                </label>
+                <label className="input input-secondary flex items-center gap-2">
+                    <KeyIcon width={18} />
+                    <input
+                        placeholder="password"
+                        type="password"
+                        className="grow"
+                        required
+                    />
+                </label>
                 <button
                     type="submit"
                     className="btn btn-neutral text-lg font-medium"
