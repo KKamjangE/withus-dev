@@ -1,42 +1,47 @@
+import { CloudIcon } from '@heroicons/react/24/outline';
+
 import { usePostSignIn } from '#/hooks/queries/sign';
-import { Link } from 'react-router-dom';
+
+import GoogleLogo from '#/assets/google-logo.svg?react';
 
 const AuthPage = () => {
     const { mutate } = usePostSignIn();
     return (
-        <div>
-            <div>
-                <div />
-            </div>
-            <div>
-                <h2>WithUS에 오신 것을 환영합니다!</h2>
-                <h2>
-                    <span>그룹에서 사용하는 이메일 주소</span>로 로그인하는 것을
-                    추천드려요.
-                </h2>
-            </div>
-            <form>
+        <div className="flex flex-col gap-6 items-center mt-28">
+            <CloudIcon className="h-36 w-36 text-cyan-500" />
+            <h2 className="text-5xl font-bold">
+                WithUS에 오신 것을 환영합니다!
+            </h2>
+            <h2 className="text-xl">
+                <span className="font-bold">그룹에서 사용하는 이메일 주소</span>
+                로 로그인하는 것을 추천드려요.
+            </h2>
+            <form className="flex flex-col items-center gap-3 w-full max-w-sm">
                 <input
                     placeholder="name@work-email.com"
                     type="text"
-                    name={'userMail'}
+                    className="input input-secondary"
+                    autoFocus
+                    required
                 />
                 <input
                     placeholder="password"
                     type="password"
-                    name={'password'}
+                    className="input input-secondary"
+                    required
                 />
-                <button type="submit">계속</button>
-                <div>
-                    <hr />
-                    <span>또는</span>
-                    <hr />
-                </div>
-                <div>
-                    <Link to={'#'}>이메일이 기억나지 않아요</Link>
-                    <Link to={'#'}>비밀번호가 기억나지 않아요</Link>
-                </div>
+                <button
+                    type="submit"
+                    className="btn btn-neutral text-lg font-medium"
+                >
+                    시작
+                </button>
             </form>
+            <span className="divider">또는</span>
+            <button className="btn btn-outline text-lg font-medium max-w-sm flex items-center hover:bg-white hover:text-black">
+                <GoogleLogo width={30} height={30} />
+                sign with google
+            </button>
         </div>
     );
 };
