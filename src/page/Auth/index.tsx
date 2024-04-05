@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import { CloudIcon } from '@heroicons/react/24/outline';
 
+import { PAGE_PATH } from '#/contents/page';
 import { usePostSignIn } from '#/hooks/queries/sign';
-
 import GoogleLogo from '#/assets/google-logo.svg?react';
 
 const AuthPage = () => {
@@ -42,6 +43,12 @@ const AuthPage = () => {
                 <GoogleLogo width={30} height={30} />
                 sign with google
             </button>
+            <Link
+                to={PAGE_PATH.createAccout}
+                className="text-blue-500 hover:underline underline-offset-2"
+            >
+                처음 왔어요!
+            </Link>
         </div>
     );
 };
