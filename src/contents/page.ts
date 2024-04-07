@@ -1,5 +1,5 @@
 export const PAGE_PATH = {
     home: '/',
     auth: '/auth',
-    createAccout: '/auth/create-accout',
+    createAccout: '/auth/create-account',
 };
