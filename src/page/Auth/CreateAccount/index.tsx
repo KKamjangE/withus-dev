@@ -74,10 +74,7 @@ const CreateAccountPage = () => {
                     />
                 </div>
             </form>
-            <Button
-                type="submit"
-                className="btn btn-neutral max-w-sm text-base font-medium text-white md:text-lg"
-            >
+            <Button type="submit" className="max-w-sm md:text-lg">
                 새로운 계정 만들기
             </Button>
         </div>
