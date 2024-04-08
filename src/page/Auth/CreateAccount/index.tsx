@@ -1,67 +1,61 @@
+import Button from '#/common/components/Button';
 import { EnvelopeIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
+import Input from '#/common/components/Input';
 
 const CreateAccountPage = () => {
     const [profileImg, setProfileImg] = useState(null);
     return (
-        <div className="flex flex-col items-center gap-12 mt-28">
-            <form className="flex flex-col gap-3 w-full max-w-sm">
+        <div className="flex flex-col items-center gap-8 *:max-w-80 md:gap-12 md:*:max-w-sm">
+            <form className="flex w-full max-w-sm flex-col gap-3">
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold">
                         <span className="text-red-500">*</span>Email
                     </p>
-                    <label className="input input-secondary flex items-center gap-2">
-                        <EnvelopeIcon width={18} />
-                        <input
-                            type="text"
-                            className="grow"
-                            autoFocus
-                            required
-                            placeholder="name@work-email.com"
-                        />
-                    </label>
+                    <Input
+                        forwardIcon={<EnvelopeIcon width={18} />}
+                        type="text"
+                        autoFocus
+                        required
+                        placeholder="name@work-email.com"
+                        className="input-secondary"
+                    />
                 </div>
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold">
                         <span className="text-red-500">*</span>User Name
                     </p>
-                    <label className="input input-secondary flex items-center gap-2">
-                        <UserIcon width={18} />
-                        <input
-                            type="text"
-                            className="grow"
-                            required
-                            placeholder="Superman"
-                        />
-                    </label>
+                    <Input
+                        forwardIcon={<UserIcon width={18} />}
+                        type="text"
+                        required
+                        placeholder="Superman"
+                        className="input-secondary"
+                    />
                 </div>
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold">
                         <span className="text-red-500">*</span>Password
                     </p>
-                    <label className="input input-secondary flex items-center gap-2">
-                        <KeyIcon width={18} />
-                        <input
-                            type="password"
-                            className="grow"
-                            required
-                            placeholder="password"
-                        />
-                    </label>
+                    <Input
+                        forwardIcon={<KeyIcon width={18} />}
+                        type="password"
+                        required
+                        placeholder="password"
+                        className="input-secondary"
+                    />
                 </div>
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold">
                         <span className="text-red-500">*</span>Password Check
                     </p>
-                    <label className="input input-secondary flex items-center gap-2">
-                        <KeyIcon width={18} />
-                        <input
-                            type="password"
-                            className="grow"
-                            required
-                            placeholder="password check"
-                        />
-                    </label>
+                    <Input
+                        forwardIcon={<KeyIcon width={18} />}
+                        type="password"
+                        required
+                        placeholder="password check"
+                        className="input-secondary"
+                    />
                 </div>
                 <div className="flex flex-col gap-4">
                     <p className="font-semibold">Profile Image</p>
@@ -80,12 +74,9 @@ const CreateAccountPage = () => {
                     />
                 </div>
             </form>
-            <button
-                type="submit"
-                className="btn btn-neutral text-lg font-medium max-w-sm"
-            >
+            <Button type="submit" className="max-w-sm md:text-lg">
                 새로운 계정 만들기
-            </button>
+            </Button>
         </div>
     );
 };

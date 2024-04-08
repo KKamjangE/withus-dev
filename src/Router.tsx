@@ -4,12 +4,9 @@ import AuthPage from '#/page/Auth';
 import AuthLayout from '#/page/Auth/AuthLayout';
 import CreateAccountPage from '#/page/Auth/CreateAccount';
 import HomePage from '#/page/Home';
+import GroupConnectionPage from '#/page/group/GroupConnection/input';
 
 const router = createBrowserRouter([
-    {
-        path: PAGE_PATH.home,
-        element: <HomePage />,
-    },
     {
         element: <AuthLayout />,
         children: [
@@ -21,7 +18,15 @@ const router = createBrowserRouter([
                 path: PAGE_PATH.createAccout,
                 element: <CreateAccountPage />,
             },
+            {
+                path: PAGE_PATH.groupConnection,
+                element: <GroupConnectionPage />,
+            },
         ],
+    },
+    {
+        path: PAGE_PATH.home,
+        element: <HomePage />,
     },
 ]);
 
