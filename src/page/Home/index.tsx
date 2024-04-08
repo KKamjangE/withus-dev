@@ -1,9 +1,9 @@
 import { PAGE_PATH } from '#/contents/page';
-import { Link } from 'react-router-dom';
+import Link from '#/common/components/Link';
 
 const HomePage = () => {
     return (
-        <div>
+        <div className="flex h-screen items-center justify-center">
             <ul>
                 <li>
                     <Link to={PAGE_PATH.auth}>Auth</Link>
