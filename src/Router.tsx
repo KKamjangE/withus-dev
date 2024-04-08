@@ -18,15 +18,15 @@ const router = createBrowserRouter([
                 path: PAGE_PATH.createAccout,
                 element: <CreateAccountPage />,
             },
+            {
+                path: PAGE_PATH.groupConnection,
+                element: <GroupConnectionPage />,
+            },
         ],
     },
     {
         path: PAGE_PATH.home,
         element: <HomePage />,
-    },
-    {
-        path: PAGE_PATH.groupConnection,
-        element: <GroupConnectionPage />,
     },
 ]);
 
