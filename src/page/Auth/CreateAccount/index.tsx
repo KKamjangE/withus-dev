@@ -6,8 +6,8 @@ import Input from '#/common/components/Input';
 const CreateAccountPage = () => {
     const [profileImg, setProfileImg] = useState(null);
     return (
-        <div className="flex flex-col items-center gap-12 mt-28">
-            <form className="flex flex-col gap-3 w-full max-w-sm">
+        <div className="flex flex-col items-center gap-8 *:max-w-80 md:gap-12 md:*:max-w-sm">
+            <form className="flex w-full max-w-sm flex-col gap-3">
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold">
                         <span className="text-red-500">*</span>Email
@@ -76,7 +76,7 @@ const CreateAccountPage = () => {
             </form>
             <Button
                 type="submit"
-                className="btn btn-neutral text-lg font-medium max-w-sm"
+                className="btn btn-neutral max-w-sm text-base font-medium text-white md:text-lg"
             >
                 새로운 계정 만들기
             </Button>
