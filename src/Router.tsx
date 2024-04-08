@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { PAGE_PATH } from './contents/page';
 import AuthPage from '#/page/Auth';
-import AuthLayout from '#/page/Auth/AuthLayout';
+import AuthLayout from '#/Layout/AuthLayout';
 import CreateAccountPage from '#/page/Auth/CreateAccount';
 import HomePage from '#/page/Home';
 import GroupConnectionPage from '#/page/group/GroupConnection/input';
