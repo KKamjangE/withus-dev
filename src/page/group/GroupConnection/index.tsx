@@ -6,7 +6,7 @@ import Link from '#/common/components/Link';
 const GroupConnectionPage = () => {
     return (
         <div className="flex flex-col items-center gap-4 md:gap-6">
-            <TicketIcon className="size-16 text-secondary md:size-24" />
+            <TicketIcon className="size-16 text-primary md:size-24" />
             <p className="text-2xl font-bold md:text-4xl">
                 초대 받으신 그룹이 있으신가요?
             </p>
