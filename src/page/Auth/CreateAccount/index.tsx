@@ -18,7 +18,6 @@ const CreateAccountPage = () => {
                         autoFocus
                         required
                         placeholder="name@work-email.com"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -30,7 +29,6 @@ const CreateAccountPage = () => {
                         type="text"
                         required
                         placeholder="Superman"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -42,7 +40,6 @@ const CreateAccountPage = () => {
                         type="password"
                         required
                         placeholder="password"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -54,7 +51,6 @@ const CreateAccountPage = () => {
                         type="password"
                         required
                         placeholder="password check"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-4">

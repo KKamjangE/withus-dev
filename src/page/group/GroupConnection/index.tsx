@@ -6,7 +6,7 @@ import Link from '#/common/components/Link';
 const GroupConnectionPage = () => {
     return (
         <div className="flex flex-col items-center gap-4 md:gap-6">
-            <TicketIcon className="size-16 text-cyan-500 md:size-24" />
+            <TicketIcon className="size-16 text-primary md:size-24" />
             <p className="text-2xl font-bold md:text-4xl">
                 초대 받으신 그룹이 있으신가요?
             </p>
@@ -18,7 +18,7 @@ const GroupConnectionPage = () => {
                 type="text"
                 placeholder="enter the invited link here"
                 autoFocus
-                className="input-secondary max-w-80 md:max-w-sm"
+                className="max-w-80 md:max-w-sm"
             />
             <Button className="max-w-80 md:max-w-sm">
                 초대받은 그룹에 참가하기

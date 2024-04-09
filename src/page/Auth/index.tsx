@@ -11,7 +11,7 @@ const AuthPage = () => {
     const { mutate } = usePostSignIn();
     return (
         <div className="flex flex-col items-center gap-4">
-            <CloudIcon className="size-16 text-cyan-500 md:size-24" />
+            <CloudIcon className="size-16 text-primary md:size-24" />
             <h1 className="text-2xl font-bold md:text-4xl">
                 WithUS에 오신 것을 환영합니다!
             </h1>
@@ -21,32 +21,30 @@ const AuthPage = () => {
                 </span>
                 로 로그인하는 것을 추천드려요.
             </p>
-            <form className="flex w-full max-w-80 flex-col items-center gap-3 md:max-w-sm">
+            <form className="flex w-full max-w-80 flex-col items-center gap-3 md:max-w-sm md:gap-4">
                 <Input
                     forwardIcon={<EnvelopeIcon width={18} />}
                     placeholder="name@work-email.com"
-                    type="text"
+                    type="email"
                     autoFocus
                     required
-                    className="input-secondary"
                 />
                 <Input
                     forwardIcon={<KeyIcon width={18} />}
                     placeholder="password"
                     type="password"
                     required
-                    className="input-secondary"
                 />
                 <Button type="submit">시작</Button>
             </form>
             <div className="w-full max-w-80 md:max-w-screen-sm">
                 <span className="divider">또는</span>
             </div>
-            <Button className="btn-outline flex max-w-80 items-center bg-white text-neutral hover:bg-white hover:text-black md:max-w-sm">
+            <button className="btn flex w-full max-w-80 items-center bg-white text-base font-medium text-neutral hover:bg-white hover:text-neutral md:max-w-sm md:text-lg">
                 <GoogleLogo className="size-6 md:size-8" />
                 sign with google
-            </Button>
-            <Link to={PAGE_PATH.createAccout}>처음 왔어요!</Link>
+            </button>
+            <Link to={PAGE_PATH.createAccout}>처음 방문하셨나요?</Link>
         </div>
     );
 };
