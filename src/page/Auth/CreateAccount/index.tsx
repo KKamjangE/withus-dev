@@ -56,11 +56,13 @@ const CreateAccountPage = () => {
                 <div className="flex flex-col gap-4">
                     <p className="font-semibold">Profile Image</p>
                     <div className="avatar placeholder self-center">
-                        <div className="w-24 rounded-full bg-neutral-content">
+                        <div className="w-24 rounded-full bg-neutral">
                             {profileImg ? (
-                                <img src="" alt="profile image" />
+                                <img src={profileImg} alt="profile image" />
                             ) : (
-                                <span className="text-sm">Superman</span>
+                                <span className="text-sm text-neutral-content">
+                                    Superman
+                                </span>
                             )}
                         </div>
                     </div>

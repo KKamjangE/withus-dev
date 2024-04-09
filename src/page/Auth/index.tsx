@@ -11,7 +11,7 @@ const AuthPage = () => {
     const { mutate } = usePostSignIn();
     return (
         <div className="flex flex-col items-center gap-4">
-            <CloudIcon className="size-16 text-primary md:size-24" />
+            <CloudIcon className="size-16 text-secondary md:size-24" />
             <h1 className="text-2xl font-bold md:text-4xl">
                 WithUS에 오신 것을 환영합니다!
             </h1>
