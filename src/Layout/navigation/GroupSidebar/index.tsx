@@ -1,4 +1,4 @@
-import GroupList from '#/layout/navigation/GroupSidebar/GroupList';
+import GroupList from "#/Layout/navigation/GroupSidebar/GroupList";
 
 const GroupSidebar = () => {
     return (

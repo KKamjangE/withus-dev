@@ -1,5 +1,5 @@
+import GroupSidebar from '#/Layout/navigation/GroupSidebar';
 import { Outlet } from 'react-router-dom';
-import GroupSidebar from '#/layout/navigation/GroupSidebar';
 
 const MainLayout = () => {
     return (
