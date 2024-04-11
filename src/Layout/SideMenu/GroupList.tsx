@@ -10,7 +10,6 @@ const GroupList = () => {
 
     return (
         <div className="flex h-screen flex-col items-center bg-base-300">
-            {/* <h1 className="px-3 py-5 text-xl font-semibold">WidthUS</h1> */}
             <div className="mt-3 flex grow flex-col gap-5 p-3">
                 {groupList.map((item, index) => (
                     <GroupItem key={index} groupItem={item} />
