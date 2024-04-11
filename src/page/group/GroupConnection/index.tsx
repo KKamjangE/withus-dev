@@ -1,7 +1,7 @@
 import { LinkIcon, TicketIcon } from '@heroicons/react/24/outline';
-import Button from '#/common/components/Button';
-import Input from '#/common/components/Input';
-import Link from '#/common/components/Link';
+import Button from '#/components/Button';
+import Input from '#/components/Input';
+import Link from '#/components/Link';
 
 const GroupConnectionPage = () => {
     return (

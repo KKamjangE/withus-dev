@@ -1,7 +1,7 @@
-import Button from '#/common/components/Button';
-import { EnvelopeIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
-import Input from '#/common/components/Input';
+import { EnvelopeIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
+import Button from '#/components/Button';
+import Input from '#/components/Input';
 
 const CreateAccountPage = () => {
     const [profileImg, setProfileImg] = useState(null);

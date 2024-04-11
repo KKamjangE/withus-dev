@@ -3,9 +3,9 @@ import { CloudIcon, EnvelopeIcon, KeyIcon } from '@heroicons/react/24/outline';
 import { PAGE_PATH } from '#/contents/page';
 import { usePostSignIn } from '#/hooks/queries/sign';
 import GoogleLogo from '#/assets/google-logo.svg?react';
-import Button from '#/common/components/Button';
-import Input from '#/common/components/Input';
-import Link from '#/common/components/Link';
+import Button from '#/components/Button';
+import Input from '#/components/Input';
+import Link from '#/components/Link';
 
 const AuthPage = () => {
     const { mutate } = usePostSignIn();

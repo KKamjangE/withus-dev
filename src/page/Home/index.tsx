@@ -1,5 +1,5 @@
 import { PAGE_PATH } from '#/contents/page';
-import Link from '#/common/components/Link';
+import Link from '#/components/Link';
 
 const HomePage = () => {
     return (
