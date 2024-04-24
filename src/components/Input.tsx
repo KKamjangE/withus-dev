@@ -7,10 +7,10 @@ interface InputProps extends ComponentProps<'input'> {
 const Input = ({ className, forwardIcon, ...rest }: InputProps) => {
     return (
         <label
-            className={`input border-stone-300 flex items-center gap-2 w-full ${className}`}
+            className={`input input-bordered flex w-full items-center gap-2 has-[:focus]:input-primary ${className}`}
         >
             {forwardIcon}
-            <input className={'placeholder:text-stone-500 grow'} {...rest} />
+            <input className={'grow'} {...rest} />
         </label>
     );
 };

@@ -1,12 +1,12 @@
 import { LinkIcon, TicketIcon } from '@heroicons/react/24/outline';
-import Button from '#/common/components/Button';
-import Input from '#/common/components/Input';
-import Link from '#/common/components/Link';
+import Button from '#/components/Button';
+import Input from '#/components/Input';
+import Link from '#/components/Link';
 
 const GroupConnectionPage = () => {
     return (
-        <div className="flex flex-col items-center gap-4 md:gap-6">
-            <TicketIcon className="size-16 text-cyan-500 md:size-24" />
+        <div className="flex flex-col items-center gap-5 md:gap-8">
+            <TicketIcon className="size-16 text-primary md:size-24" />
             <p className="text-2xl font-bold md:text-4xl">
                 초대 받으신 그룹이 있으신가요?
             </p>
@@ -18,7 +18,7 @@ const GroupConnectionPage = () => {
                 type="text"
                 placeholder="enter the invited link here"
                 autoFocus
-                className="input-secondary max-w-80 md:max-w-sm"
+                className="max-w-80 md:max-w-sm"
             />
             <Button className="max-w-80 md:max-w-sm">
                 초대받은 그룹에 참가하기

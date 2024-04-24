@@ -4,7 +4,7 @@ const Link = ({ to, className, children, ...rest }: LinkProps) => {
     return (
         <LinkBase
             to={to}
-            className={`text-blue-500 underline-offset-2 hover:underline ${className}`}
+            className={`link link-primary font-normal no-underline underline-offset-2 hover:underline ${className}`}
             {...rest}
         >
             {children}

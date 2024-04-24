@@ -1,7 +1,7 @@
-import Button from '#/common/components/Button';
-import { EnvelopeIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
-import Input from '#/common/components/Input';
+import { EnvelopeIcon, KeyIcon, UserIcon } from '@heroicons/react/24/outline';
+import Button from '#/components/Button';
+import Input from '#/components/Input';
 
 const CreateAccountPage = () => {
     const [profileImg, setProfileImg] = useState(null);
@@ -18,7 +18,6 @@ const CreateAccountPage = () => {
                         autoFocus
                         required
                         placeholder="name@work-email.com"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -30,7 +29,6 @@ const CreateAccountPage = () => {
                         type="text"
                         required
                         placeholder="Superman"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -42,7 +40,6 @@ const CreateAccountPage = () => {
                         type="password"
                         required
                         placeholder="password"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -54,17 +51,18 @@ const CreateAccountPage = () => {
                         type="password"
                         required
                         placeholder="password check"
-                        className="input-secondary"
                     />
                 </div>
                 <div className="flex flex-col gap-4">
                     <p className="font-semibold">Profile Image</p>
                     <div className="avatar placeholder self-center">
-                        <div className="w-24 rounded-full bg-neutral-content">
+                        <div className="w-24 rounded-full bg-neutral">
                             {profileImg ? (
-                                <img src="" alt="profile image" />
+                                <img src={profileImg} alt="profile image" />
                             ) : (
-                                <span className="text-sm">Superman</span>
+                                <span className="text-sm text-neutral-content">
+                                    Superman
+                                </span>
                             )}
                         </div>
                     </div>
