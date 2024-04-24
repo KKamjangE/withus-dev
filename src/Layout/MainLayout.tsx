@@ -3,9 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
     return (
-        <div className="relative">
+        <div>
             <SideMenu />
-            <div className="bg-neutral">
+            <div className="fixed flex h-10 w-screen items-center justify-between bg-base-300 px-2">
+                <h1 className="text-base font-semibold">WithUS</h1>
+            </div>
+            <div className="ml-[300px] h-full bg-neutral">
                 <Outlet />
             </div>
         </div>
