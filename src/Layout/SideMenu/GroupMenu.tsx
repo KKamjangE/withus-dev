@@ -5,7 +5,7 @@ const GroupMenu = () => {
     const [selectedMenu, setSelectedMenu] = useState(null);
     return (
         <div className="bg-base-300">
-            <div className="flex h-screen w-56 flex-col rounded-tl-2xl bg-base-100 px-3 py-5">
+            <div className="flex h-screen w-56 flex-col rounded-tl-2xl bg-base-100 py-5 align-middle">
                 <nav className="flex flex-col gap-2">
                     <h3 className="m-3 text-xl">✨ Project</h3>
                     <GroupMenuItem to={'/'}>피드</GroupMenuItem>
