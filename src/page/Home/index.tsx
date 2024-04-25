@@ -14,6 +14,9 @@ const HomePage = () => {
                 <li>
                     <Link to={PAGE_PATH.groupConnection}>Group Connection</Link>
                 </li>
+                <li>
+                    <Link to={PAGE_PATH.feed}>Feed</Link>
+                </li>
             </ul>
         </div>
     );

@@ -5,6 +5,7 @@ import AuthLayout from '#/layout/AuthLayout';
 import MainLayout from '#/layout/MainLayout';
 import AuthPage from '#/page/Auth';
 import CreateAccountPage from '#/page/Auth/CreateAccount';
+import FeedPage from '#/page/Feed';
 import GroupConnectionPage from '#/page/group/GroupConnection';
 import HomePage from '#/page/Home';
 
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
                 path: PAGE_PATH.home,
                 element: <HomePage />,
             },
+            { path: PAGE_PATH.feed, element: <FeedPage /> },
         ],
     },
 ]);

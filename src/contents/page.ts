@@ -3,4 +3,5 @@ export const PAGE_PATH = {
     auth: '/auth',
     createAccout: '/auth/create-account',
     groupConnection: 'group/group-connection',
+    feed: '/feed',
 };
