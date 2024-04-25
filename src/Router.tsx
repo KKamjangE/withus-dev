@@ -1,11 +1,12 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
 import { PAGE_PATH } from '#/contents/page';
 import AuthLayout from '#/layout/AuthLayout';
 import MainLayout from '#/layout/MainLayout';
 import AuthPage from '#/page/Auth';
-import HomePage from '#/page/Home';
 import CreateAccountPage from '#/page/Auth/CreateAccount';
 import GroupConnectionPage from '#/page/group/GroupConnection';
+import HomePage from '#/page/Home';
 
 const router = createBrowserRouter([
     {
