@@ -1,5 +1,6 @@
-import GroupItem from '#/layout/SideMenu/GroupItem';
 import { SquaresPlusIcon } from '@heroicons/react/24/outline';
+
+import GroupItem from '#/layout/SideMenu/GroupItem';
 
 const GroupList = () => {
     const groupList = [
