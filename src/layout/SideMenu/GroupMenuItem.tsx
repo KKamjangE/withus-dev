@@ -1,6 +1,6 @@
+import { HashtagIcon } from '@heroicons/react/24/solid';
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { HashtagIcon } from '@heroicons/react/24/solid';
 
 const GroupMenuItem = ({
     children,

@@ -1,9 +1,9 @@
-import { PAGE_PATH } from '#/contents/page';
 import Link from '#/components/Link';
+import { PAGE_PATH } from '#/contents/page';
 
 const HomePage = () => {
     return (
-        <div className="flex h-screen items-center justify-center">
+        <div className='flex h-screen items-center justify-center'>
             <ul>
                 <li>
                     <Link to={PAGE_PATH.auth}>Auth</Link>
@@ -13,6 +13,9 @@ const HomePage = () => {
                 </li>
                 <li>
                     <Link to={PAGE_PATH.groupConnection}>Group Connection</Link>
+                </li>
+                <li>
+                    <Link to={PAGE_PATH.feed}>Feed</Link>
                 </li>
             </ul>
         </div>

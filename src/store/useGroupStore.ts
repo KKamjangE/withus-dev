@@ -1,11 +1,11 @@
 import { create } from 'zustand';
 
-interface GroupState {
+interface GroupStore {
     groupId: null | string;
     actions: { changeGroupId: (groupId: string) => void };
 }
 
-const useGroupStore = create<GroupState>((set) => ({
+const useGroupStore = create<GroupStore>((set) => ({
     groupId: null,
     actions: {
         changeGroupId: (groupId: string) => set({ groupId }),
